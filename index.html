@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HabitTracker</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <div class="logo">HabitTracker</div>
+</header>
+
+<div class="sidebar" id="sidebar">
+  <a href="add.html">+ Tambah Habit</a>
+  <a onclick="setTheme('light')">Light Mode</a>
+  <a onclick="setTheme('dark')">Dark Mode</a>
+  <a onclick="setTheme('cyber')">Cyberpunk Mode</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<main class="container">
+  <h2>Dashboard</h2>
+  <div id="habitList"></div>
+  <canvas id="progressChart" height="200"></canvas>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
